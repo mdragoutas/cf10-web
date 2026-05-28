@@ -33,3 +33,58 @@ body {
 .bg-green {
     background-color: green;
 }
+
+.important-text {
+    color: yellow !important;
+}
+
+.container p {
+    text-decoration: line-through;
+}
+
+.container ul ul li {
+    color: red;
+}
+
+input[type= "text"] {
+    border: 2px solid red;
+}
+
+p::first-letter {
+    font-size: 20px;
+}
+
+h2::before {
+    content: "@";
+    color: rgb(255, 255, 255);
+}
+
+h2::after {
+    content: "$";
+    color: red;
+}
+
+ul li:first-child {
+    color: goldenrod !important;
+    font-weight: bold;
+    background-color: aqua ;
+}
+
+ul li:last-child {
+    color: purple !important;
+    font-weight: bold;
+    background-color: darkgray;
+}
+
+ul li:nth-child(odd) {
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.border-red {
+    border: 2px dotted red;
+}
