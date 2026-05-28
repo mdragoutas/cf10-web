@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="gr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with CSS</title>
+
+    <style>
+        h1 {
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS/2-CSS-basic-style.css">
+</head>
+<body>
+    <h1 class="main-title bg-green">CSS Introduction Example</h1>
+    <div class="container">
+        <p style="color: red; background-color: gray;">
+            this paragraph uses INLINE CSS 
+        </p>
+
+        <p>
+            this paragraph uses INTERNAL CSS 
+        </p>
+
+        <p class="highlight">
+            this text uses a class selector
+        </p>
+
+        <p id="unique">
+            this text uses an ID selector
+        </p>
+
+        <p class="special">
+            Specificity example with CLASS Selector
+        </p>
+
+        <p id="unique" class="special">
+            ID and Class name the winner is:
+        </p>
+
+        <h2>Lists and CSS</h2>
+        <ul>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+        </ul>
+
+        <h2 class="bg-green">Forms</h2>
+        <form>
+            <input type="text" placeholder="type something">
+            
+            <br>
+            
+            <button>hover me</button>
+        </form>
+    </div>
+</body>
+</html>

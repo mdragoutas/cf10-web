@@ -1,0 +1,35 @@
+body {
+    background-color: darkcyan;
+}
+
+.main-title {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.highlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+.container {
+    background-color: thistle;
+}
+
+#unique {
+    color: darkgreen;
+}
+
+.special {
+    color: chocolate;
+}
+
+#unique.special {
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.bg-green {
+    background-color: green;
+}
