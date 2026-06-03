@@ -119,12 +119,14 @@ th {
     background-color: aqua;
     border: 1px solid white;
     border-radius: 5px;
+    display: block;
 }
 
 .inline-example {
     background-color: blueviolet;
     border: 1px solid white;
     border-radius: 5px;
+    display: inline;
 }
 
 .inline-block-example {
