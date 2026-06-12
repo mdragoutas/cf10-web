@@ -21,32 +21,36 @@
 <body>
 
   <!-- HEADER -->
-  <header>
+  <header class="stick bg-gov border-bottom border-5 border-bottom-gov">
 
-    <div>
+    <div class="container-fluid">
 
-      <div>
+      <div class="d-flex justify-content-between align-items-center">
 
+        <!-- Logo -->
         <div>
           <img src="../images/gov_gr-thumb-540.png" alt="gov" style="height:100px;">
         </div>
 
+        <!-- Navigation -->
         <nav>
 
-          <ul>
+          <ul class="d-flex align-items-center gap-3 list-unstyled">
 
             <li>
-              <span>
-                <i></i>
+              <span class="border border-white rounded p-2 text-white">
+                <i class="fa-solid fa-bars"></i>
               </span>
             </li>
 
             <li>
 
-              ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ
+              <span class="text-white">
+                ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ
+              </span>
 
-              <span>
-                <i></i>
+              <span class="text-white ms-2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
               </span>
 
             </li>
@@ -62,50 +66,50 @@
   </header>
 
   <!-- CONTENT -->
-  <div>
+  <div class="container-fluid">
 
-    <div>
+    <div class=" row">
 
       <!-- SIDEBAR -->
-      <aside>
+      <aside class="bg-gov col-lg-2 col-md-3 text-white">
 
         <p>
-          <i></i>
-          <a href="../index.html">
+          <i class="fa-solid fa-house"></i>
+          <a class="text-white text-decoration-none" href="../index.html">
             Αρχική
           </a>
         </p>
 
         <p>
-          <i></i>
+          <i class="fa-solid fa-chevron-down"></i>
           Δηλώσεις Καθαρισμού
         </p>
 
-        <p>
+        <p class="ps-3 small">
           Προβολή Δηλώσεων
         </p>
 
-        <p>
+        <p class="ps-3 small text-warning">
           Υποβολή Δήλωσης
         </p>
 
       </aside>
 
       <!-- MAIN -->
-      <main>
+      <main class="p-4 col-lg-10 col-md-9">
 
         <!-- STEPPER -->
         <section>
 
-          <h1>
+          <h1 class="text-center mb-5">
             Υποβολή Δήλωσης Καθαρισμού Οικοπέδου
           </h1>
 
-          <div>
+          <div class="row text-center align-items-center">
 
-            <div>
+            <div class="col ">
 
-              <div>
+              <div class="active-step stepper mx-auto">
                 1
               </div>
 
@@ -115,13 +119,13 @@
 
             </div>
 
-            <div>
+            <div class="col">
               <hr>
             </div>
 
-            <div>
+            <div class="col ">
 
-              <div>
+              <div class="stepper mx-auto">
                 2
               </div>
 
@@ -131,13 +135,13 @@
 
             </div>
 
-            <div>
+            <div class="col">
               <hr>
             </div>
 
-            <div>
+            <div class="col">
 
-              <div>
+              <div class="stepper mx-auto">
                 3
               </div>
 
@@ -154,11 +158,11 @@
         <!-- FORM -->
         <section>
 
-          <h2>
+          <h2 class="text-center">
             Στοιχεία Οικοπέδου
           </h2>
 
-          <div>
+          <div class="alert alert-secondary">
             Παρακαλώ εισάγεται στοιχεία οικοπέδου
           </div>
 
@@ -166,58 +170,44 @@
 
             <!-- Radio -->
             <div>
+              <label class="fw-bold">Εντοπισμός οικοπέδου:</label>
 
-              <label>
-                Εντοπισμός οικοπέδου:
-              </label>
-
-              <div>
-
-                <input type="radio" name="fieldRadio" checked>
-
-                <label>
-                  ΚΑΕΚ
-                </label>
-
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="fieldRadio" checked>
+                <label class="form-check-label">ΚΑΕΚ</label>
               </div>
 
-              <div>
-
-                <input type="radio" name="fieldRadio">
-
-                <label>
-                  Συντεταγμένες(x,y)
-                </label>
-
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="fieldRadio">
+                <label class="form-check-label">Συντεταγμένες(x,y)</label>
               </div>
-
             </div>
 
             <!-- KAEK -->
-            <div>
+            <div class="mt-4">
 
-              <label>
+              <label class="form-label">
                 KAEK
               </label>
 
-              <input type="text">
+              <input class="form-control" type="text">
 
-              <div>
+              <div class="form-text">
                 Εισάγεται το ΚΑΕΚ του οικοπέδου
               </div>
 
             </div>
 
             <!-- ROW -->
-            <div>
+            <div class="row mt-4">
 
-              <div>
+              <div class="col-md-6">
 
-                <label>
+                <label class="form-label">
                   Νομός
                 </label>
 
-                <select>
+                <select class="form-select">
 
                   <option>Χανίων</option>
                   <option>Αττικής</option>
@@ -227,13 +217,13 @@
 
               </div>
 
-              <div>
+              <div class="col-md-6">
 
-                <label>
+                <label class="form-label">
                   Δήμος
                 </label>
 
-                <select>
+                <select class="form-select">
 
                   <option>Δήμος 1</option>
                   <option>Δήμος 2</option>
@@ -245,63 +235,68 @@
             </div>
 
             <!-- TEXT INPUTS -->
-            <div>
+            <div class="row mt-4">
 
-              <div>
+              <div class="col-md-6">
 
-                <input type="text" placeholder="Δημοτική Ενότητα">
+                <input class="form-control" type="text" placeholder="Δημοτική Ενότητα">
 
               </div>
 
-              <div>
+              <div class="col-md-6">
 
-                <input type="text" placeholder="Οικισμός">
+                <input class="form-control" type="text" placeholder="Οικισμός">
 
               </div>
 
             </div>
 
             <!-- ADDRESS -->
-            <div>
+            <div class="row mt-4">
 
-              <div>
+              <div class="col-md-4">
 
-                <label>
+                <label class="form-label">
                   Οδός
                 </label>
 
-                <input type="text">
+                <input class="form-control" type="text">
 
               </div>
 
-              <div>
+              <div class="col-md-4">
 
-                <label>
+                <label class="form-label">
                   Αριθμός
                 </label>
 
-                <input type="text">
+                <input class="form-control" type="text">
 
               </div>
 
-              <div>
+              <div class="col-md-4 ">
 
-                <label>
+                <label class="form-label">
                   Τ.Κ
                 </label>
 
-                <input type="text">
+                <div class="input-group">
+                  
+                  <span class="input-group-text"><i class="fa-solid fa-address-book"></i></span>
 
+                  <input class="form-control" type="text">
+
+                </div>
               </div>
 
             </div>
 
             <!-- BUTTON -->
-            <div>
+            <div class="mt-4 text-end">
 
-              <a href="./form-2.html">
+              <a class="btn btn-success" role="button" href="./form-2.html">
                 Επόμενο
-                <i></i>
+                <i class="fa-solid fa-chevron-right"></i>
               </a>
 
             </div>
@@ -317,13 +312,13 @@
   </div>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="bg-footer border-top border-5 border-top-gov">
 
-    <div>
+    <div class="container">
 
-      <div>
+      <div class="row align-items-center">
 
-        <div>
+        <div class="col-md-6 py-4 text-start">
 
           <p>
             <a href="#">
@@ -340,9 +335,9 @@
 
         </div>
 
-        <div>
+        <div class="col-md-6 py-4 text-end">
 
-          <img src="../images/government-logo2.svg" alt="gov" style="height:75px;">
+          <img src="../images/government-logo2.svg" alt="gov logo" style="height:75px;">
 
         </div>
 

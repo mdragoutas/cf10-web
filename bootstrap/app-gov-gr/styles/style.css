@@ -21,3 +21,25 @@
 .border-top-gov {
     border-color: var(--blue) !important;
 }
+
+/* Stepper Stling */
+
+.stepper {
+    width: 40px;
+    height: 40px;
+    background-color: var(--lightgray-300);
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+.active-step {
+    background-color: var(--gov-blue);
+    color: white;
+}
+
+.stick {
+    position: sticky;
+    top: 0;
+}
